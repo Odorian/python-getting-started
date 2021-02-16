@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-import requests
+import requests 
 from .models import Greeting
 
 def index(request):
@@ -8,7 +8,7 @@ def index(request):
     print(r.text)
     return HttpResponse('<pre>' + r.text + '</pre>')
 
-
+  
 def db(request):
 
     greeting = Greeting()
